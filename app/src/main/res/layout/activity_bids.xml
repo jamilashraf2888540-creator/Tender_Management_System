@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bids"
+    android:padding="18dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="العروض المقدمة"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Spinner
+        android:id="@+id/spBidTender"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#111827"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnAddBid"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="+ إضافة عرض"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#7C3AED"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnCompareBids"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="مقارنة العروض"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#374151"
+        android:layout_marginBottom="15dp"/>
+
+    <ListView
+        android:id="@+id/lvBids"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#25304A"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

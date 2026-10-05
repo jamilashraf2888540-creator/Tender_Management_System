@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- خلفية شاشة reports: تدرّج + توهّج + رسمة خاصة -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- تدرّج عمودي -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#0D2B33"
+                android:centerColor="#091520"
+                android:endColor="#070B18" />
+        </shape>
+    </item>
+
+    <!-- توهّج شفاف -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.0"
+                android:centerY="0.1"
+                android:gradientRadius="90%p"
+                android:startColor="#382DD4BF"
+                android:endColor="#002DD4BF" />
+        </shape>
+    </item>
+
+    <!-- الرسمة (أسفل اليمين) -->
+    <item
+        android:drawable="@drawable/art_reports"
+        android:width="360dp"
+        android:height="360dp"
+        android:gravity="bottom|end" />
+</layer-list>

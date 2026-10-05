@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_add_bid"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إضافة عرض جديد"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvAddBidTender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="المناقصة: "
+            android:textColor="#CBD5E1"
+            android:textSize="15sp"
+            android:layout_marginBottom="22dp"/>
+
+        <EditText
+            android:id="@+id/etBidCompany"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="اسم الشركة"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:inputType="text"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:id="@+id/etBidAmount"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="قيمة العرض (دولار)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:id="@+id/etBidDuration"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="مدة التنفيذ (بالأيام)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:inputType="number"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:id="@+id/etBidNotes"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="ملاحظات العرض (الضمان، المواصفات...)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:gravity="top"
+            android:background="#111827"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSaveBid"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="حفظ العرض"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#7C3AED"/>
+
+    </LinearLayout>
+
+</ScrollView>

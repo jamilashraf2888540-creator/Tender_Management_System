@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dashboard"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:layoutDirection="rtl">
+
+        <!-- الترحيب -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مرحباً بك 👋"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDashboardSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إليك ملخص نظام المناقصات اليوم"
+            android:textColor="#94A3B8"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- إحصائيات المناقصات -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إحصائيات المناقصات"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+
+        <!-- الصف الأول -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvTotalTenders"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="18&#10;إجمالي المناقصات"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="#18213A" />
+
+            <TextView
+                android:id="@+id/tvOpenTenders"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="8&#10;مناقصات مفتوحة"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="#12352F" />
+
+        </LinearLayout>
+
+
+        <!-- الصف الثاني -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="18dp">
+
+            <TextView
+                android:id="@+id/tvReviewTenders"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="6&#10;قيد المراجعة"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="#3A2A13" />
+
+            <TextView
+                android:id="@+id/tvAwardedTenders"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="4&#10;تمت الترسية"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="#27204A" />
+
+        </LinearLayout>
+
+
+        <!-- قيمة العقود -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إجمالي قيمة العقود"
+            android:textColor="#CBD5E1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvContractValue"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="$ 245,000"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:padding="18dp"
+            android:background="#111827"
+            android:layout_marginBottom="22dp" />
+
+
+        <!-- أحدث المناقصات -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أحدث المناقصات"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <ListView
+            android:id="@+id/lvRecentTenders"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:divider="#25304A"
+            android:dividerHeight="1dp"
+            android:background="#111827" />
+
+
+        <!-- اختصارات -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اختصارات سريعة"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnDashboardTenders"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="إدارة المناقصات"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#7C3AED"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnDashboardCompanies"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="إدارة الشركات"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#374151"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnDashboardReports"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="التقارير والإحصائيات"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="#374151"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

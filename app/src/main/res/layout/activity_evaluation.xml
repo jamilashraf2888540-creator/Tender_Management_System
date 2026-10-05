@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_evaluation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تقييم العرض"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tvEvaluationCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الشركة: شركة المستقبل"
+            android:textColor="#CBD5E1"
+            android:textSize="16sp"
+            android:background="#111827"
+            android:padding="16dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="السعر"
+            android:textColor="#CBD5E1"
+            android:textSize="15sp"/>
+
+        <SeekBar
+            android:id="@+id/seekPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:max="100"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الجودة"
+            android:textColor="#CBD5E1"
+            android:textSize="15sp"/>
+
+        <SeekBar
+            android:id="@+id/seekQuality"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:max="100"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الخبرة"
+            android:textColor="#CBD5E1"
+            android:textSize="15sp"/>
+
+        <SeekBar
+            android:id="@+id/seekExperience"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:max="100"
+            android:layout_marginBottom="18dp"/>
+
+        <EditText
+            android:id="@+id/etEvaluationNotes"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="ملاحظات التقييم"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:gravity="top"
+            android:background="#111827"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalScore"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="المجموع: 0 / 100"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:background="#18213A"
+            android:layout_marginBottom="18dp"/>
+
+        <Button
+            android:id="@+id/btnSaveEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="حفظ التقييم"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#7C3AED"/>
+
+    </LinearLayout>
+
+</ScrollView>

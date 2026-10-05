@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الإعدادات"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="22dp"/>
+
+        <TextView
+            android:id="@+id/tvAccountSettings"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="إعدادات الحساب"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#111827"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvNotificationSettings"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="الإشعارات"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#111827"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvDatabaseSettings"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="إدارة قاعدة البيانات"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#111827"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="حول التطبيق"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="#111827"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="تسجيل الخروج"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#DC2626"/>
+
+    </LinearLayout>
+
+</ScrollView>

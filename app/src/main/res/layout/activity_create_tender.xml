@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_create_tender"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إنشاء مناقصة جديدة"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="22dp"/>
+
+        <EditText
+            android:id="@+id/etTenderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="عنوان المناقصة"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:id="@+id/etTenderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:hint="وصف المناقصة"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:gravity="top"
+            android:background="#111827"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="القسم المسؤول"
+            android:textColor="#CBD5E1"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp"/>
+
+        <Spinner
+            android:id="@+id/spDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#111827"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:id="@+id/etEstimatedBudget"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="الميزانية التقديرية"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:id="@+id/etOpeningDate"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="تاريخ فتح المناقصة"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:focusable="false"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:id="@+id/etClosingDate"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="تاريخ إغلاق المناقصة"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:focusable="false"
+            android:layout_marginBottom="14dp"/>
+
+        <EditText
+            android:id="@+id/etRequirements"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="الشروط والمتطلبات"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:gravity="top"
+            android:background="#111827"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnCreateTender"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="حفظ المناقصة"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#7C3AED"/>
+
+    </LinearLayout>
+
+</ScrollView>

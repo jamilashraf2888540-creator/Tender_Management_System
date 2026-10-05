@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        android:layoutDirection="rtl">
+
+        <!-- شعار البرنامج -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚖"
+            android:textSize="55sp"
+            android:textColor="#8B5CF6"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- اسم البرنامج -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نظام إدارة المناقصات"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إدارة • تقييم • عروض • عقود"
+            android:textColor="#94A3B8"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="35dp"/>
+
+        <!-- اسم المستخدم -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="اسم المستخدم"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:inputType="text"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- كلمة المرور -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="كلمة المرور"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#64748B"
+            android:padding="16dp"
+            android:background="#111827"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- زر تسجيل الدخول -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="تسجيل الدخول"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#7C3AED"/>
+
+        <!-- نسيت كلمة المرور -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نسيت كلمة المرور؟"
+            android:textColor="#A78BFA"
+            android:textSize="14sp"
+            android:layout_marginTop="18dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

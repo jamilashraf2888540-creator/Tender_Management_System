@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- خلفية موحدة لكل الشاشات: تدرّج غامق + توهّج بنفسجي خفيف من الزاوية العلوية -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- الطبقة 1: تدرّج عمودي من أزرق بنفسجي غامق (فوق) إلى الخلفية الأصلية (تحت) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#140F33"
+                android:centerColor="#0A0F22"
+                android:endColor="#070B18" />
+        </shape>
+    </item>
+
+    <!-- الطبقة 2: توهّج بنفسجي شفاف في أعلى اليمين -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.9"
+                android:centerY="0.0"
+                android:gradientRadius="90%p"
+                android:startColor="#407C3AED"
+                android:endColor="#007C3AED" />
+        </shape>
+    </item>
+</layer-list>

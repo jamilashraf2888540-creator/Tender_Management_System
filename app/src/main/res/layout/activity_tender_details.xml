@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tender_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:id="@+id/tvTenderNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم المناقصة: T-001"
+            android:textColor="#A78BFA"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTenderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="توريد أجهزة حاسوب"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvTenderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مفتوحة"
+            android:textColor="#34D399"
+            android:textSize="15sp"
+            android:background="#12352F"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="معلومات المناقصة"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTenderInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الميزانية: 50,000 دولار&#10;تاريخ الفتح: 10/10/2026&#10;تاريخ الإغلاق: 25/10/2026"
+            android:textColor="#CBD5E1"
+            android:textSize="15sp"
+            android:lineSpacingExtra="8dp"
+            android:background="#111827"
+            android:padding="18dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الشروط والمتطلبات"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTenderRequirements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="يجب أن تكون الشركة مسجلة رسمياً وأن تمتلك خبرة سابقة..."
+            android:textColor="#CBD5E1"
+            android:textSize="15sp"
+            android:background="#111827"
+            android:padding="18dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnAddBidFromTender"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="إضافة عرض لهذه المناقصة"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#7C3AED"/>
+
+    </LinearLayout>
+
+</ScrollView>

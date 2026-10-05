@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- خلفية شاشة dashboard: تدرّج + توهّج + رسمة خاصة -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- تدرّج عمودي -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#1B203C"
+                android:centerColor="#0D1123"
+                android:endColor="#070B18" />
+        </shape>
+    </item>
+
+    <!-- توهّج شفاف -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.0"
+                android:centerY="0.0"
+                android:gradientRadius="90%p"
+                android:startColor="#38818CF8"
+                android:endColor="#00818CF8" />
+        </shape>
+    </item>
+
+    <!-- الرسمة (أسفل اليمين) -->
+    <item
+        android:drawable="@drawable/art_dashboard"
+        android:width="360dp"
+        android:height="360dp"
+        android:gravity="bottom|end" />
+</layer-list>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_tenders"
+    android:padding="18dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="المناقصات"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etSearchTender"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="ابحث عن مناقصة..."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#64748B"
+        android:padding="15dp"
+        android:background="#111827"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <Spinner
+        android:id="@+id/spTenderFilter"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#111827"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAddTender"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="+ إنشاء مناقصة جديدة"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#7C3AED"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTenders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"/>
+
+</LinearLayout>

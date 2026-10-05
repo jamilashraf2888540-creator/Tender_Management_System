@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- خلفية شاشة tender_details: تدرّج + توهّج + رسمة خاصة -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- تدرّج عمودي -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#15243C"
+                android:centerColor="#0B1323"
+                android:endColor="#070B18" />
+        </shape>
+    </item>
+
+    <!-- توهّج شفاف -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="1.0"
+                android:centerY="0.2"
+                android:gradientRadius="90%p"
+                android:startColor="#3860A5FA"
+                android:endColor="#0060A5FA" />
+        </shape>
+    </item>
+
+    <!-- الرسمة (أسفل اليمين) -->
+    <item
+        android:drawable="@drawable/art_tender_details"
+        android:width="360dp"
+        android:height="360dp"
+        android:gravity="bottom|end" />
+</layer-list>

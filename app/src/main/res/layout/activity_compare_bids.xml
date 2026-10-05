@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_compare_bids">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مقارنة العروض"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="18dp"/>
+
+        <Spinner
+            android:id="@+id/spCompareTender"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#111827"
+            android:layout_marginBottom="18dp"/>
+
+        <TextView
+            android:id="@+id/tvCompareResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="العروض المتاحة للمقارنة"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#18213A"
+            android:padding="18dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ListView
+            android:id="@+id/lvCompareBids"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:divider="#25304A"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnStartEvaluation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="الانتقال إلى التقييم"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#7C3AED"/>
+
+    </LinearLayout>
+
+</ScrollView>
